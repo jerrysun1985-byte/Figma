@@ -1,16 +1,21 @@
 # Design Company Website
 
-This repository is prepared for the Figma Make website:
+This is the exported source code bundle for the Figma Make project:
 
 https://www.figma.com/make/AGB6nv3N9Sra52blSNFMM1/Design-company-website?t=2Xp7ZY5hDbSY019h-1
 
-The current project is a deploy-ready static site. It is ready to connect to Netlify through GitHub and does not require external build dependencies.
-
 ## Local Development
+
+Install dependencies:
 
 ```bash
 npm install
-npm run build
+```
+
+Start the development server:
+
+```bash
+npm run dev
 ```
 
 ## Build
@@ -29,13 +34,4 @@ Use these settings when importing this GitHub repository into Netlify:
 - Build command: `npm run build`
 - Publish directory: `dist`
 
-The same settings are also stored in `netlify.toml`.
-
-## Updating From Figma Make
-
-When the Figma Make source code export is available, replace the current app files with the exported source, then verify:
-
-```bash
-npm install
-npm run build
-```
+The same settings are stored in `netlify.toml`.
